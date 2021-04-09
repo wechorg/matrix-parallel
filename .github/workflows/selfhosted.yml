@@ -6,7 +6,7 @@ jobs:
   greeting:
     runs-on: [self-hosted,azure]
     strategy:
-      max-parallel: 1
+#       max-parallel: 1
       matrix:
         random: ["a","b","c","d"]
     steps:
