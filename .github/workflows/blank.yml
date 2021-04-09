@@ -1,0 +1,15 @@
+name: Greetings
+
+on: [workflow_dispatch]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        random: ["a","b","c","d"]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Echo name
+      run: echo Hello, World
