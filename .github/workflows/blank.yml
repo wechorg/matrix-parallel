@@ -6,7 +6,7 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4
+      max-parallel: 1
       matrix:
         random: ["a","b","c","d"]
     steps:
