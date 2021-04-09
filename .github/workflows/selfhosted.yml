@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 
 jobs:
   greeting:
-    runs-on: self-hosted
+    runs-on: [self-hosted,azure]
     strategy:
       max-parallel: 1
       matrix:
